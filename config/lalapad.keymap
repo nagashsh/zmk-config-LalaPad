@@ -185,7 +185,7 @@
         DEFAULT_LAYER {
             display-name = "Default";
             sensor-bindings =
-                <&inc_dec_kp TAB LC(TAB)>,
+                <&inc_dec_kp TAB LS(TAB)>,
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
