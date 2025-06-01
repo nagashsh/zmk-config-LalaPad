@@ -188,11 +188,11 @@
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
-&kp TAB      &kp Q                &kp W         &kp E            &kp R             &kp T          &kp Y          &kp U        &kp I            &kp O               &kp P        &mt EQUAL MINUS
-&kp LS(TAB)  &kp A                &kp S         &kp D            &kp F             &kp G          &kp H          &kp J        &kp K            &kp L               &kp SEMI     &kp BACKSPACE
-&mo 2        &kp Z                &kp X         &kp C            &kp V             &kp B          &kp N          &kp M        &kp COMMA        &kp PERIOD          &kp SLASH    &kp DELETE
-&kp LANG2    &mt LEFT_ALT ESCAPE  &kp LEFT_WIN  &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LANG2      &kp LANG1      &lt 3 TAB    &lt 1 SPACE      &kp K_CONTEXT_MENU  &lt 4 ENTER  &kp LANG1
-                                  &allow_end    &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp TAB    &kp Q                &kp W         &kp E            &kp R             &kp T          &kp Y          &kp U        &kp I            &kp O               &kp P        &mt EQUAL MINUS
+&mo 1      &kp A                &kp S         &kp D            &kp F             &kp G          &kp H          &kp J        &kp K            &kp L               &kp SEMI     &mo 1
+&mo 2      &kp Z                &kp X         &kp C            &kp V             &kp B          &kp N          &kp M        &kp COMMA        &kp PERIOD          &kp SLASH    &mo 2
+&kp LANG2  &mt LEFT_ALT ESCAPE  &kp LEFT_WIN  &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LANG2      &kp LANG1      &lt 3 TAB    &lt 1 SPACE      &kp K_CONTEXT_MENU  &lt 4 ENTER  &kp LANG1
+                                &allow_end    &allow_pagedown  &allow_home       &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
