@@ -185,14 +185,14 @@
         DEFAULT_LAYER {
             display-name = "Default";
             sensor-bindings =
-                <&inc_dec_kp PAGE_UP LS(PAGE_DOWN)>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
-&kp TAB              &kp Q             &kp W            &kp E           &kp R           &kp T         &kp Y         &kp U           &kp I           &kp O            &kp P           &mt EQUAL MINUS
-&mo 2                &kp A             &kp S            &kp D           &kp F           &kp G         &kp H         &kp J           &kp K           &kp L            &kp SEMI        &mo 2
-&mo 2                &kp Z             &kp X            &kp C           &kp V           &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD       &kp SLASH       &mo 2
-&mt LEFT_ALT ESCAPE  &kp INT_MUHENKAN  &kp LEFT_WIN     &kp LEFT_SHIFT  &kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &lt 3 TAB       &lt 1 SPACE     &none            &kp INT_HENKAN  &lt 4 ENTER
+&kp TAB           &kp Q                &kp W            &kp E           &kp R           &kp T         &kp Y         &kp U           &kp I           &kp O            &kp P           &mt EQUAL MINUS
+&mo 2             &kp A                &kp S            &kp D           &kp F           &kp G         &kp H         &kp J           &kp K           &kp L            &kp SEMI        &mo 2
+&mo 2             &kp Z                &kp X            &kp C           &kp V           &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD       &kp SLASH       &mo 2
+&kp INT_MUHENKAN  &mt ESCAPE LEFT_ALT  &kp LEFT_WIN     &kp LEFT_SHIFT  &kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &lt 3 TAB       &lt 1 SPACE     &none            &kp INT_HENKAN  &lt 4 ENTER
                                        &msc SCRL_RIGHT  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_UP  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
             >;
         };
@@ -203,7 +203,7 @@
 &trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans  &trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0         &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SINGLE_QUOTE     &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &kp DELETE     &kp N1        &kp NUMBER_2  &kp N3        &kp INTERNATIONAL_1  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans         &trans        &trans        &trans        &trans               &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans         &trans        &trans        &trans        &trans               &kp LEFT_CONTROL
                 &trans          &trans          &trans           &trans  &trans         &trans        &trans        &trans
             >;
         };
@@ -233,11 +233,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mo 5      &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &mo 5          &mkp RCLK  &trans  &kp LG(LC(LEFT_ARROW))
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK     &mkp MCLK      &trans     &trans  &kp LC(LG(RIGHT))
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp LA(RIGHT)  &trans     &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans
             >;
         };
 
