@@ -189,10 +189,10 @@
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
-&kp TAB              &kp Q                &kp W            &kp E           &kp R           &kp T         &kp Y         &kp U           &kp I           &kp O               &kp P        &mt EQUAL MINUS
-&mo 2                &kp A                &kp S            &kp D           &kp F           &kp G         &kp H         &kp J           &kp K           &kp L               &kp SEMI     &mo 2
-&kp INT_MUHENKAN     &kp Z                &kp X            &kp C           &kp V           &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD          &kp SLASH    &kp INT_HENKAN
-&mt LEFT_ALT ESCAPE  &mt LEFT_ALT ESCAPE  &kp LEFT_WIN     &kp LEFT_SHIFT  &kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &lt 3 TAB       &lt 1 SPACE     &kp K_CONTEXT_MENU  &lt 4 ENTER  &lt 4 ENTER
+&kp TAB              &kp Q                &kp W            &kp E           &kp R           &kp T         &kp Y         &kp U           &kp I           &kp O               &kp P                &mt EQUAL MINUS
+&mo 2                &kp A                &kp S            &kp D           &kp F           &kp G         &kp H         &kp J           &kp K           &kp L               &kp SEMI             &mo 2
+&mo 2                &kp Z                &kp X            &kp C           &kp V           &kp B         &kp N         &kp M           &kp COMMA       &kp PERIOD          &kp SLASH            &mo 2
+&mt LEFT_ALT ESCAPE  &kp INTERNATIONAL_5  &kp LEFT_WIN     &kp LEFT_SHIFT  &kp LCTRL       &bt BT_SEL 0  &bt BT_SEL 1  &lt 3 TAB       &lt 1 SPACE     &kp K_CONTEXT_MENU  &kp INTERNATIONAL_4  &lt 4 ENTER
                                           &msc SCRL_RIGHT  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_UP  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
             >;
         };
@@ -211,7 +211,7 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp LS(N1)        &kp LS(EQUAL)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &trans  &trans  &kp LS(N7)            &kp LS(N8)             &kp LS(N9)           &kp LEFT_BRACE           &trans
+&trans  &kp LS(N1)        &kp LS(EQUAL)         &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &trans  &trans  &kp LS(N7)            &kp LS(N8)             &kp LS(N9)           &kp LEFT_BRACKET         &trans
 &trans  &kp LS(NUMBER_6)  &kp LS(SINGLE_QUOTE)  &kp LS(N5)        &kp EQUAL         &trans  &trans  &kp LS(N2)            &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp SINGLE_QUOTE         &trans
 &trans  &kp LS(INT_YEN)   &kp EQUAL             &trans            &trans            &trans  &trans  &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp LS(INTERNATIONAL_1)  &trans
 &trans  &trans            &trans                &trans            &trans            &trans  &trans  &trans                &trans                 &trans               &trans                   &trans
